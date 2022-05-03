@@ -1,9 +1,9 @@
 let display = document.getElementById('display');
 
-let buttons = Array.from(document.getElementsByClassName('button'));
+let btns = Array.from(document.getElementsByClassName('btn'));
 
-buttons.map( button => {
-    button.addEventListener('click', (e) => {
+btns.map( btn => {
+    btn.addEventListener('click', (e) => {
         switch(e.target.innerText){
             case 'C':
                 display.innerText = '';
